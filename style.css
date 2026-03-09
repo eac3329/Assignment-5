@@ -157,3 +157,73 @@ input::placeholder { color: #9CA3AF; }
 .demo-title { font-size: 12px; color: #9CA3AF; margin-bottom: 6px; }
 .demo-box p { font-size: 13px; color: #374151; line-height: 1.7; }
 .demo-box strong { color: #111827; }
+
+
+/* ─── NAVBAR ─────────────────────────────────────── */
+
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #E4E4E7;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-left { display: flex; align-items: center; gap: 10px; }
+.nav-brand { font-size: 15px; font-weight: 700; color: #111827; }
+.nav-logo { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; display: block; }
+.nav-right { display: flex; align-items: center; gap: 12px; }
+
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-wrap svg {
+  position: absolute;
+  left: 10px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.search-input {
+  padding: 7px 12px 7px 34px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #374151;
+  background: #F9FAFB;
+  width: 220px;
+  outline: none;
+  transition: border 0.15s, box-shadow 0.15s, width 0.2s;
+}
+
+.search-input::placeholder { color: #9CA3AF; }
+
+.search-input:focus {
+  border-color: #4A00FF;
+  box-shadow: 0 0 0 3px rgba(74,0,255,0.10);
+  background: #fff;
+  width: 270px;
+}
+
+.btn-new {
+  background: #4A00FF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.btn-new:hover { background: #3800cc; }
