@@ -469,3 +469,15 @@ input::placeholder { color: #9CA3AF; }
 .modal-badge-status img { width: 14px; height: 14px; object-fit: contain; }
 .modal-badge-status.open   { background: #DCFCE7; color: #15803D; }
 .modal-badge-status.closed { background: #EDE9FE; color: #6D28D9; }
+
+/* ─── RESPONSIVE ─────────────────────────────────── */
+
+@media (max-width: 1050px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 720px)  { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px)  {
+  .grid { grid-template-columns: 1fr; }
+  .navbar { padding: 0 16px; }
+  .nav-brand { font-size: 13px; }
+  .search-input { width: 130px; }
+  .main { padding: 16px 12px 40px; }
+}
