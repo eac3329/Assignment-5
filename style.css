@@ -227,3 +227,34 @@ input::placeholder { color: #9CA3AF; }
 }
 
 .btn-new:hover { background: #3800cc; }
+
+
+
+/* ─── MAIN ───────────────────────────────────────── */
+
+.main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 60px; }
+
+.tabs {
+  display: inline-flex;
+  background: #F3F4F6;
+  border: 1px solid #E4E4E7;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 2px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  color: #6B7280;
+  transition: all 0.15s;
+}
+
+.tab:hover { background: #E9EBEE; color: #111827; }
+.tab.active { background: #4A00FF; color: #fff; }
