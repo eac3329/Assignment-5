@@ -258,3 +258,40 @@ input::placeholder { color: #9CA3AF; }
 
 .tab:hover { background: #E9EBEE; color: #111827; }
 .tab.active { background: #4A00FF; color: #fff; }
+
+
+
+/* ─── SUMMARY BAR ────────────────────────────────── */
+
+.summary-bar {
+  background: #fff;
+  border: 1px solid #E4E4E7;
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.summary-left { display: flex; align-items: center; gap: 14px; }
+
+
+.summary-icon {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EEF2FF;
+}
+
+.summary-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.summary-num { font-size: 16px; font-weight: 700; color: #111827; }
+.summary-sub { font-size: 12px; color: #6B7280; margin-top: 2px; }
+
+.legend { display: flex; align-items: center; gap: 16px; font-size: 13px; color: #374151; }
+.legend-item { display: flex; align-items: center; gap: 6px; }
+.legend-item img { width: 18px; height: 18px; object-fit: contain; display: block; flex-shrink: 0; }
